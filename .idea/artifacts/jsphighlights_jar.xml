@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="jsphighlights:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/jsphighlights_jar</output-path>
+    <root id="archive" name="jsphighlights.jar">
+      <element id="module-output" name="jsphighlights" />
+    </root>
+  </artifact>
+</component>
