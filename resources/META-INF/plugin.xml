@@ -28,7 +28,12 @@
     <!-- Add your extensions here -->
     <fileTypeFactory implementation="jsphighlights.JspFileTypeFactory"/>
     <lang.syntaxHighlighterFactory key="JSP" implementationClass="jsphighlights.JspSyntaxHighlighterFactory"/>
+    <lang.parserDefinition language="JSP" implementationClass="com.intellij.lang.xml.XMLParserDefinition"/>
     <colorSettingsPage implementation="jsphighlights.JspColorSettingsPage"/>
+    <completion.contributor language="JSP" implementationClass="com.intellij.codeInsight.completion.XmlCompletionContributor"/>
+    <psi.referenceContributor language="JSP" implementation="com.intellij.xml.util.XmlReferenceContributor"/>
+    <!--<lang.psiStructureViewFactory language="JSP" implementationClass="com.intellij.lang.xml.XmlStructureViewBuilderFactory"/>-->
+    <completionData fileType="JSP" className="com.intellij.codeInsight.completion.XmlCompletionData" />
   </extensions>
 
   <actions>
