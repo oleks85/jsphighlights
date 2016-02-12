@@ -1,5 +1,6 @@
 package jsphighlights;
 
+import com.intellij.ide.highlighter.XmlFileHighlighter;
 import com.intellij.openapi.fileTypes.SyntaxHighlighter;
 import com.intellij.openapi.options.colors.pages.XMLColorsPage;
 import org.jetbrains.annotations.NotNull;
@@ -12,7 +13,7 @@ public class JspColorSettingsPage extends XMLColorsPage {
     @NotNull
     @Override
     public SyntaxHighlighter getHighlighter() {
-        return new JspSyntaxHighlighter();
+        return new XmlFileHighlighter(false, true);
     }
 
     @NotNull

@@ -22,7 +22,7 @@ public class JspFileType extends LanguageFileType {
     @NotNull
     @Override
     public String getName() {
-        return "jsp file";
+        return "JSP";
     }
 
     @NotNull

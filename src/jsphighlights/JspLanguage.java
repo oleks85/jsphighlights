@@ -10,7 +10,7 @@ public class JspLanguage extends Language {
     public static JspLanguage INSTANCE = new JspLanguage();
 
     private JspLanguage(){
-        super("JSP");
+        super(JspLanguage.INSTANCE, "JSP", "text/xhtml", "application/xhtml+xml");
     }
 
 }

@@ -1,5 +1,6 @@
 package jsphighlights;
 
+import com.intellij.ide.highlighter.XmlFileHighlighter;
 import com.intellij.openapi.fileTypes.SyntaxHighlighter;
 import com.intellij.openapi.fileTypes.SyntaxHighlighterFactory;
 import com.intellij.openapi.project.Project;
@@ -14,6 +15,6 @@ public class JspSyntaxHighlighterFactory extends SyntaxHighlighterFactory {
     @NotNull
     @Override
     public SyntaxHighlighter getSyntaxHighlighter(@Nullable Project project, @Nullable VirtualFile virtualFile) {
-        return new JspSyntaxHighlighter();
+        return new XmlFileHighlighter(false, true);
     }
 }
